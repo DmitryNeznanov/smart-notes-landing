@@ -20,13 +20,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className=""
+    >
       <body className={`${dmSans}`}>
-        <Header />
-        <main className="border-t border-b border-secondary-200">
-          {children}
-        </main>
-        <Footer />
+        <div className="min-h-screen flex flex-col justify-between">
+          <Header />
+          <main className="border-t border-b border-secondary-200">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
