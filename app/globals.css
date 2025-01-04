@@ -18,7 +18,7 @@
   }
 
   body {
-    @apply font-dm-sans font-normal text-accent bg-accent;
+    @apply font-dm-sans font-normal text-accent bg-primary-400;
   }
   h1 {
     @apply text-[30px] md:text-[60px] font-bold;
@@ -37,9 +37,12 @@
   }
 }
 @layer components {
+  .button-primary {
+    @apply w-max flex px-[24px] py-[12px] gradient-primary text-[16px] text-primary-400 font-bold md:font-normal rounded-[8px] capitalize after:content-[url('/icons/arrow.svg')] after:w-[24px] after:h-[24px] after:ml-[8px];
+  }
 }
 @layer utilities {
   .gradient-primary {
-    @apply bg-gradient-to-r from-secondary-100 to-secondary-300;
+    @apply bg-gradient-to-tr from-secondary-300 to-secondary-100;
   }
 }
