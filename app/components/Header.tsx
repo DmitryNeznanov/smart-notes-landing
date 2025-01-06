@@ -17,10 +17,10 @@ export default function Header() {
             ></Image>
           </Link>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <HeaderNav />
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden lg:flex">
           <Link
             className="button-primary"
             href="#pricing"
@@ -28,7 +28,7 @@ export default function Header() {
             get started
           </Link>
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <Image
             src="/icons/mobile-menu-icon.svg"
             width={32}

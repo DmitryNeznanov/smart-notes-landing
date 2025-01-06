@@ -10,7 +10,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Smart Notes",
+  title: "SmartNotes",
   description: "Smart Notes Page",
 }
 

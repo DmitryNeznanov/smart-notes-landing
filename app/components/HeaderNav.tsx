@@ -12,17 +12,19 @@ export default function HeaderNav() {
         ["support", "support"],
       ].map(([title, link], i) => {
         return (
-          <li
-            className={`hover:underline ${
-              pathName === "/" && link === pathName
-                ? "text-secondary-200 pointer-events-none gradient-primary bg-clip-text"
-                : pathName.includes(link) && link !== "/"
-                ? "text-secondary-200 pointer-events-none gradient-primary bg-clip-text"
-                : ""
-            }`}
-            key={i}
-          >
-            <Link href={link}>{title}</Link>
+          <li key={i}>
+            <Link
+              className={`hover:underline ${
+                pathName === "/" && link === pathName
+                  ? "text-secondary-200 pointer-events-none"
+                  : pathName.includes(link) && link !== "/"
+                  ? "text-secondary-200 pointer-events-none"
+                  : ""
+              }`}
+              href={link}
+            >
+              {title}
+            </Link>
           </li>
         )
       })}
