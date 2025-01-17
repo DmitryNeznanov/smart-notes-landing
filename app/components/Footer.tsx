@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="">
+    <footer>
       <section className="pt-[64px] pb-[56px] md:pt-[86px] lg:pt-[80px] lg:pb-[88px]">
         <div className="container flex flex-col gap-y-[32px] lg:flex-row lg:justify-between">
           <form
@@ -24,9 +24,9 @@ export default function Footer() {
               </Link>
             </div>
             <div className="mt-[35px] lg:mt-0">
-              <div className="px-[16px] py-[8px] w-max flex items-center bg-accent rounded-[8px] border border-secondary-200">
+              <div className="px-[16px] py-[8px] w-max flex items-center justify-between bg-accent rounded-[8px] border border-secondary-200">
                 <input
-                  className="min-w-[216px] pr-[10px] bg-transparent outline-none text-primary-400 placeholder:text-inherit focus:placeholder:text-transparent"
+                  className="max-w-[216px] w-full pr-[10px] input-primary"
                   type="mail"
                   name="mail"
                   id="mail"
@@ -86,7 +86,7 @@ export default function Footer() {
                     return (
                       <li key={i}>
                         <Link
-                          className="text-primary-100  hover:text-transparent hover:gradient-primary hover:bg-clip-text"
+                          className="text-primary-100 hover:text-gradient"
                           href="#"
                         >
                           {item}

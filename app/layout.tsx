@@ -11,7 +11,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "SmartNotes",
-  description: "Smart Notes Page",
+  description: "SmartNotes Page",
 }
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
       className=""
     >
       <body className={`${dmSans}`}>
-        <div className="min-h-screen flex flex-col justify-between">
+        <div className="">
           <Header />
           <main className="border-t border-b border-secondary-200">
             {children}
