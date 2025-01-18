@@ -4,12 +4,11 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id="footer">
       <section className="pt-[64px] pb-[56px] md:pt-[86px] lg:pt-[80px] lg:pb-[88px]">
         <div className="container flex flex-col gap-y-[32px] lg:flex-row lg:justify-between">
           <form
             className="lg:flex lg:flex-col lg:justify-between"
-            action=""
             method="post"
           >
             <div>
@@ -43,7 +42,7 @@ export default function Footer() {
               </div>
             </div>
           </form>
-          <nav className="flex gap-[40px] lg:gap-x-[70px] 2xl:gap-x-[120px] flex-wrap justify-between lg:w-max">
+          <nav className="grid max-[400px]:grid-cols-2 grid-cols-3 sm:flex justify-between w-full lg:ml-[100px] 2xl:ml-[200px] gap-y-[40px]">
             {[
               {
                 title: "product",
@@ -134,7 +133,7 @@ export default function Footer() {
             </ul>
             <div className="mt-[26px] md:mt-0 md:order-1">
               <p className="text-primary-400">
-                @2024 SmartNotesI. All Rights Reserved.{" "}
+                @2024 SmartNotes. All Rights Reserved.{" "}
                 <Link
                   className="underline"
                   href="https://x.com/iamhervewabo"

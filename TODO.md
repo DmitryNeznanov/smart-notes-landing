@@ -1,4 +1,5 @@
 ### Task
  - Hamburger
- - Full screen hero
- - shade logos
+ - container ?
+ - hero image shade
+ - clean up

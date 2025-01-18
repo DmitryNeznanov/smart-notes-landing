@@ -4,11 +4,12 @@ import Link from "next/link"
 export default function Logos() {
   return (
     <section
-      className="py-[16px] mdpy-[24px]"
+      className="py-[16px] md:py-[24px]"
       id="logos"
     >
-      <div className="overflow-hidden bg-white bg-[linear-gradient(to_right,rgb(8,_8,_8),rgba(255,_255,_255,_0),rgb(8,_8,_8))]">
-        <ul className="flex flex-row justify-center md:gap-x-[30px] lg:gap-x-[33px] xl:gap-x-[60px] flex-wrap w-[300vw] -ml-[100%]">
+      <div className="overflow-clip relative">
+        <div className="w-screen h-screen absolute bg-[linear-gradient(to_right,rgb(8,_8,_8),rgba(0,_0,_0,_0),rgb(8,_8,_8))]"></div>
+        <ul className="flex flex-row justify-center md:gap-x-[30px] lg:gap-x-[33px] xl:gap-x-[60px] w-[300vw] -ml-[100%]">
           <li>
             <Link
               href="https://google.com"

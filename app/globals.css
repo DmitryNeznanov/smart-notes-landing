@@ -21,24 +21,24 @@
     @apply font-dm-sans font-normal text-accent bg-primary-400;
   }
   h1 {
-    @apply text-[30px] md:text-[59px] font-bold;
+    @apply text-[30px]/[130%] md:text-[59px]/[106%] font-bold;
   }
   h2 {
-    @apply text-[30px] md:text-[48px] font-bold;
+    @apply text-[30px]/[130%] md:text-[48px]/[120%] font-bold;
   }
   h3 {
-    @apply text-[18px] md:text-[20px] font-bold;
+    @apply text-[18px]/[150%] md:text-[20px]/[140%] font-bold;
   }
   h4 {
-    @apply text-[16px] md:text-[18px] font-bold;
+    @apply text-[16px]/[150%] md:text-[18px]/[150%] font-bold;
   }
   p {
-    @apply text-[14px] md:text-[16px] font-normal;
+    @apply text-[14px]/[150%] md:text-[16px] font-normal;
   }
 }
 @layer components {
   .button-primary {
-    @apply w-max flex px-[24px] py-[12px] gradient-primary text-[16px] text-primary-400 font-bold md:font-normal rounded-[8px] capitalize after:content-[url('/icons/arrow.svg')] after:w-[24px] after:h-[24px] after:ml-[8px];
+    @apply w-max flex items-center px-[24px] py-[12px] gradient-primary text-[16px] text-primary-400 font-bold md:font-normal rounded-[8px] capitalize after:content-[url('/icons/arrow.svg')] after:w-[24px] after:h-[24px] after:ml-[8px];
   }
   .input-primary {
     @apply bg-transparent outline-none text-primary-400 placeholder:text-inherit focus:placeholder:text-transparent;

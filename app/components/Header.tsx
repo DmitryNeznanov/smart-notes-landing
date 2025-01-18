@@ -4,7 +4,10 @@ import HeaderNav from "./HeaderNav"
 
 export default function Header() {
   return (
-    <header className="py-[24px] px-[20px] md:px-[48px] xl:px-[96px]">
+    <header
+      className="py-[24px] px-[20px] md:px-[48px] xl:px-[96px]"
+      id="header"
+    >
       <nav className="flex flex-row items-center justify-between">
         <div>
           <Link href="/">
