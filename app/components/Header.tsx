@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import HeaderNav from "./HeaderNav"
+import MobileMenu from "./HamburgerMenu/MobileMenu"
+import OpenMobileMenu from "./HamburgerMenu/OpenMobileMenu"
 
 export default function Header() {
   return (
@@ -8,6 +10,7 @@ export default function Header() {
       className="py-[24px] px-[20px] md:px-[48px] xl:px-[96px]"
       id="header"
     >
+      <MobileMenu />
       <nav className="flex flex-row items-center justify-between">
         <div>
           <Link href="/">
@@ -32,12 +35,7 @@ export default function Header() {
           </Link>
         </div>
         <div className="lg:hidden">
-          <Image
-            src="/icons/mobile-menu-icon.svg"
-            width={32}
-            height={18}
-            alt="mobile-menu-icon.svg"
-          ></Image>
+          <OpenMobileMenu />
         </div>
       </nav>
     </header>

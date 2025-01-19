@@ -2,29 +2,14 @@
 
 import Image from "next/image"
 
-// import { useLayoutEffect } from "react"
-
 export default function Hero() {
-  // useLayoutEffect(() => {
-  //   function calculateHeroHeight() {
-  //     const hero = document.getElementById("hero")!
-  //     const header = document.getElementById("header")!
-  //     const viewPortHeight = window.innerHeight
-
-  //     const headerHeight = header.getBoundingClientRect().height
-  //     const heroHeight = viewPortHeight - headerHeight
-
-  //     hero.style.height = `${heroHeight}px`
-  //   }
-  //   calculateHeroHeight()
-  // })
   return (
     <section
       className="py-[64px] md:py-[96px] lg:py-[53px] "
       id="hero"
     >
       <div className="container flex items-center justify-between">
-        <div className="flex flex-row items-center md:block">
+        <div className="flex flex-col lg:flex-row items-center md:block">
           <article className="max-w-[350px] md:max-w-[700px]">
             <h1>
               <span className="text-gradient">Intelligent</span> cloud-based
@@ -36,7 +21,7 @@ export default function Hero() {
               you work today.
             </p>
           </article>
-          <form className="mt-[50px] max-w-[434px] pt-[6px] pr-[6px] pb-[6px] pl-[24px] w-full flex items-center justify-between gap-x-[10px] bg-accent rounded-[8px] border border-secondary-200">
+          <form className="w-full max-w-[434px] mt-[50px] pt-[6px] pr-[6px] pb-[6px] pl-[24px] flex items-center justify-between gap-x-[10px] bg-accent border border-secondary-200 rounded-[8px]">
             <input
               className="min-w-[0px] input-primary"
               placeholder="Enter your email"
@@ -50,9 +35,9 @@ export default function Hero() {
             </button>
           </form>
         </div>
-        <div className="hidden w-[300px] 2xl:w-auto xl:block">
+        <div className="hidden xl:block w-[300px] 2xl:w-auto h-max relative">
+          <div className="absolute w-full h-full bg-[linear-gradient(to_bottom,rgb(8,_8,_8),rgba(0,_0,_0,_0),rgb(8,_8,_8))] "></div>
           <Image
-            className="[mask-image:linear-gradient(to_bottom,rgb(8,_8,_8),rgba(255,_255,_255,_0),rgb(8,_8,_8))]"
             src="/hero.svg"
             width={363}
             height={483}

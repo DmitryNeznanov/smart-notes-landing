@@ -7,9 +7,9 @@ export default function Logos() {
       className="py-[16px] md:py-[24px]"
       id="logos"
     >
-      <div className="overflow-clip relative">
-        <div className="w-screen h-screen absolute bg-[linear-gradient(to_right,rgb(8,_8,_8),rgba(0,_0,_0,_0),rgb(8,_8,_8))]"></div>
-        <ul className="flex flex-row justify-center md:gap-x-[30px] lg:gap-x-[33px] xl:gap-x-[60px] w-[300vw] -ml-[100%]">
+      <div className="overflow-hidden relative">
+        <div className="w-full h-full absolute bg-[linear-gradient(to_right,rgb(8,_8,_8),rgba(0,_0,_0,_0),rgb(8,_8,_8))]"></div>
+        <ul className="w-[300vw] -ml-[100%] flex flex-row justify-center md:gap-x-[30px] lg:gap-x-[33px] xl:gap-x-[60px]  ">
           <li>
             <Link
               href="https://google.com"
@@ -19,7 +19,7 @@ export default function Logos() {
                 src="/svg/logos.svg"
                 width={118}
                 height={48}
-                alt="logos-1.svg"
+                alt="logos.svg"
               ></Image>
             </Link>
           </li>
