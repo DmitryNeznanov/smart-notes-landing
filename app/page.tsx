@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Hero from "./components/dashboard/Hero"
 import Logos from "./components/dashboard/Logos"
-import HeaderNav from "./components/HeaderNav"
+import Testimonials from "./components/dashboard/Testimonials"
 
 export const metadata: Metadata = {
   title: "SmartNotes | Home",
@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <Logos />
+      <Testimonials />
     </>
   )
 }

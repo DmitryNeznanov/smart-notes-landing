@@ -3,29 +3,22 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 export default function HeaderNav() {
   const data = [
-    ["home", "/"],
-    ["features", "features"],
-    ["pricing", "pricing"],
-    ["support", "support"],
+    ["features", "#features"],
+    ["pricing", "#pricing"],
+    ["support", "#support"],
   ]
   const pathName = usePathname()
   return (
     <ul className="flex flex-col lg:flex-row gap-y-[16px] lg:gap-x-[56px] capitalize">
       {data.map(([title, link], i) => {
         return (
-          <>
-            <li
-              className=""
-              key={i}
-            >
+          <div
+            className="contents"
+            key={i}
+          >
+            <li>
               <Link
-                className={`hover:underline ${
-                  pathName === "/" && link === pathName
-                    ? "text-secondary-200 pointer-events-none"
-                    : pathName.includes(link) && link !== "/"
-                    ? "text-secondary-200 pointer-events-none"
-                    : ""
-                }`}
+                className="hover:underline text-accent"
                 href={link}
               >
                 {title}
@@ -38,7 +31,7 @@ export default function HeaderNav() {
                 } `}
               />
             </li>
-          </>
+          </div>
         )
       })}
     </ul>
