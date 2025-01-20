@@ -6,6 +6,7 @@ export default function HeaderNav() {
     ["features", "#features"],
     ["pricing", "#pricing"],
     ["support", "#support"],
+    ["FAQs", "#faqs"],
   ]
   const pathName = usePathname()
   return (

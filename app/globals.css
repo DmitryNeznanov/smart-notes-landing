@@ -51,4 +51,9 @@
   .text-gradient {
     @apply text-transparent gradient-primary bg-clip-text;
   }
+  .transition-width {
+    transition-property: width;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+  }
 }

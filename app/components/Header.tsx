@@ -7,7 +7,7 @@ import OpenMobileMenu from "./HamburgerMenu/OpenMobileMenu"
 export default function Header() {
   return (
     <header
-      className="py-[24px] px-[20px] md:px-[48px] xl:px-[96px]"
+      className="py-[24px] px-[20px] md:px-[48px] xl:px-[96px] border-b border-secondary-200"
       id="header"
     >
       <MobileMenu />
@@ -34,7 +34,7 @@ export default function Header() {
             get started
           </Link>
         </div>
-        <div className="lg:hidden">
+        <div className="h-max lg:hidden">
           <OpenMobileMenu />
         </div>
       </nav>

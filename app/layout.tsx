@@ -25,11 +25,9 @@ export default function RootLayout({
       className=""
     >
       <body className={`${dmSans}`}>
-        <div className="">
+        <div className="flex flex-col justify-between min-h-screen">
           <Header />
-          <main className="border-t border-b border-secondary-200">
-            {children}
-          </main>
+          <main>{children}</main>
           <Footer />
         </div>
       </body>

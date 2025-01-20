@@ -5,8 +5,14 @@ import SocialLinks from "./SocialLinks"
 
 export default function Footer() {
   return (
-    <footer id="footer">
-      <section className="pt-[64px] pb-[56px] md:pt-[86px] lg:pt-[80px] lg:pb-[88px]">
+    <footer
+      className="border-t border-secondary-200"
+      id="footer"
+    >
+      <section
+        className="pt-[64px] pb-[56px] md:pt-[86px] lg:pt-[80px] lg:pb-[88px]"
+        id="faqs"
+      >
         <div className="container flex flex-col gap-y-[32px] lg:flex-row lg:justify-between">
           <form
             className="lg:flex lg:flex-col lg:justify-between"
@@ -26,7 +32,7 @@ export default function Footer() {
             <div className="mt-[35px] lg:mt-0">
               <div className="w-max px-[16px] py-[8px] flex items-center justify-between bg-accent rounded-[8px] border border-secondary-200">
                 <input
-                  className="w-full max-w-[216px] pr-[10px] input-primary"
+                  className="min-w-[0px] max-w-[216px] pr-[10px] input-primary"
                   type="mail"
                   name="mail"
                   id="mail"

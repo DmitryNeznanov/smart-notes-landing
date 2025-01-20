@@ -21,7 +21,7 @@ export default function Hero() {
               you work today.
             </p>
           </article>
-          <form className="w-full max-w-[434px] mt-[50px] pt-[6px] pr-[6px] pb-[6px] pl-[24px] flex items-center justify-between gap-x-[10px] bg-accent border border-secondary-200 rounded-[8px]">
+          <form className="max-w-[434px] mt-[50px] pt-[6px] pr-[6px] pb-[6px] pl-[24px] flex items-center justify-between gap-x-[10px] bg-accent border border-secondary-200 rounded-[8px]">
             <input
               className="min-w-[0px] input-primary"
               placeholder="Enter your email"
