@@ -5,11 +5,11 @@ import Image from "next/image"
 export default function Hero() {
   return (
     <section
-      className="py-[64px] md:py-[96px] lg:py-[53px] "
+      className=" py-[64px] md:py-[96px] lg:py-[53px] "
       id="hero"
     >
-      <div className="container flex items-center justify-between">
-        <div className="flex flex-col lg:flex-row items-center md:block">
+      <div className="container xl:flex xl:items-center xl:justify-between">
+        <div className="flex flex-col items-center justify-center lg:flex-row md:block">
           <article className="max-w-[350px] md:max-w-[700px]">
             <h1>
               <span className="text-gradient">Intelligent</span> cloud-based
@@ -23,12 +23,12 @@ export default function Hero() {
           </article>
           <form className="max-w-[434px] mt-[50px] pt-[6px] pr-[6px] pb-[6px] pl-[24px] flex items-center justify-between gap-x-[10px] bg-accent border border-secondary-200 rounded-[8px]">
             <input
-              className="min-w-[0px] input-primary"
+              className="w-full sm:w-auto input-primary"
               placeholder="Enter your email"
               type="text"
             />
             <button
-              className="w-max button-primary"
+              className="button-primary"
               type="button"
             >
               sign up

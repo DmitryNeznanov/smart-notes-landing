@@ -8,10 +8,7 @@ export default function OpenMobileMenu() {
     document.body.style.overflow = "hidden"
   }
   return (
-    <button
-      className="block"
-      onClick={openMobileMenu}
-    >
+    <button onClick={openMobileMenu}>
       <Image
         src="/icons/open-mobile-menu.svg"
         width={32}
