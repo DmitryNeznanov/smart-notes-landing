@@ -29,13 +29,13 @@ export default function MobileMenu() {
       style={{ width: "0%" }}
     >
       <header
-        className="py-[24px] px-[20px] flex flex-row items-center justify-between border-b border-secondary-200"
+        className=" py-[24px] px-[20px] flex flex-row items-center justify-between border-b border-secondary-200"
         id="mobileMenuHeader"
       >
         <div>
-          <Link href="#">
+          <Link href="/">
             <Image
-              className="w-[137px] h-[28px]"
+              className="w-[137px] h-[28px] md:w-[183px] md:h-[38px]"
               src="/svg/logo.svg"
               width={183}
               height={38}

@@ -9,7 +9,10 @@ export default function ClostMobileMenu() {
     document.body.style.overflow = "visible"
   }
   return (
-    <button onClick={closeMobileMenu}>
+    <button
+      className="block"
+      onClick={closeMobileMenu}
+    >
       <Image
         className="w-[24px] h-[24px]"
         src="/icons/close-mobile-menu.svg"

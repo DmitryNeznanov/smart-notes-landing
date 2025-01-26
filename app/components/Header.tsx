@@ -34,7 +34,7 @@ export default function Header() {
             get started
           </Link>
         </div>
-        <div className="h-max lg:hidden">
+        <div className="lg:hidden">
           <OpenMobileMenu />
         </div>
       </nav>
