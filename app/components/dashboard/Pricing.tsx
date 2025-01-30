@@ -18,7 +18,33 @@ export default function Pricing() {
             coding. Build your next landing page.
           </p>
         </article>
-        <div></div>
+        <section className="mt-[40px]">
+          <div className="flex items-center justify-center gap-x-[14px]">
+            <label
+              className="text-[18px] text-accent select-none cursor-pointer"
+              htmlFor="switch"
+            >
+              Monthly
+            </label>
+            <div className="w-[65px] overflow-hidden relative group z-10 bg-primary-100 peer-checked:hidden rounded-full">
+              <label
+                className="w-screen h-screen z-20 absolute cursor-pointer"
+                htmlFor="switch"
+              ></label>
+              <input
+                className="peer hidden"
+                type="checkbox"
+                name="switch"
+                id="switch"
+              />
+              <div className="w-[20px] h-[20px] m-[6px] peer-checked:ml-auto  transition-all duration-300 bg-[#fff] rounded-full"></div>
+            </div>
+            <p className="text-[18px] text-primary-100">Yearly</p>
+            <span className="text-[14px] text-primary-400 py-[2px] px-[16px] rounded-full gradient-primary">
+              Save 25%
+            </span>
+          </div>
+        </section>
         <section className="mt-[40px] flex flex-col items-center lg:items-stretch lg:flex-row justify-between gap-[40px] ">
           {[
             [
