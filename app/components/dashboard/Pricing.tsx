@@ -37,7 +37,7 @@ export default function Pricing() {
                 name="switch"
                 id="switch"
               />
-              <div className="w-[20px] h-[20px] m-[6px] peer-checked:ml-auto  transition-all duration-300 bg-[#fff] rounded-full"></div>
+              <div className="w-[20px] h-[20px] m-[6px] peer-checked:ml-auto transition-all duration-300 bg-[#fff] rounded-full"></div>
             </div>
             <p className="text-[18px] text-primary-100">Yearly</p>
             <span className="text-[14px] text-primary-400 py-[2px] px-[16px] rounded-full gradient-primary">
