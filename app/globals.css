@@ -32,16 +32,22 @@
   h4 {
     @apply text-[16px]/[150%] md:text-[18px]/[150%] font-bold;
   }
+  h6 {
+    @apply text-[14px]/[150%] md:text-[16px] font-normal;
+  }
   p {
     @apply text-[14px]/[150%] md:text-[16px] font-normal;
   }
 }
 @layer components {
   .button-primary {
-    @apply w-max flex items-center px-[24px] py-[12px] gradient-primary text-[16px] text-primary-400 font-bold md:font-normal rounded-[8px] capitalize after:content-[url('/icons/arrow.svg')] after:w-[24px] after:h-[24px] after:ml-[8px];
+    @apply w-max flex justify-center items-center px-[24px] py-[12px] gradient-primary text-[16px] text-primary-400 font-bold md:font-normal rounded-[8px] capitalize after:bg-cover after:bg-[url('/icons/arrow.svg')] after:w-[24px] after:h-[24px] after:ml-[8px];
+  }
+  .button-accent {
+    @apply w-max flex justify-center items-center px-[24px] py-[12px] bg-accent text-[16px] text-primary-400 font-bold md:font-normal rounded-[8px] border border-secondary-200 capitalize after:bg-cover after:bg-[url('/icons/arrow-secondary.svg')] after:w-[24px] after:h-[24px] after:ml-[8px];
   }
   .input-primary {
-    @apply bg-transparent outline-none text-primary-400 placeholder:text-inherit focus:placeholder:text-transparent;
+    @apply block bg-transparent outline-none text-primary-400 placeholder:text-inherit focus:placeholder:text-transparent;
   }
 }
 @layer utilities {

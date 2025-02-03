@@ -5,10 +5,9 @@ export default function HeaderNav() {
   const data = [
     ["features", "#features"],
     ["pricing", "#pricing"],
-    ["support", "#support"],
-    ["FAQs", "#faqs"],
+    ["support", "#footer"],
+    ["FAQs", "#FAQs"],
   ]
-  const pathName = usePathname()
   return (
     <ul className="flex flex-col lg:flex-row gap-y-[16px] lg:gap-x-[56px] capitalize">
       {data.map(([title, link], i) => {
