@@ -16,7 +16,7 @@ export default function Hero() {
               <span className="text-gradient"> note-taking</span> and
               collaboration tool
             </h1>
-            <p className="max-w-[335px] md:max-w-[400px] lg:max-w-none pt-[16px] text-primary-100">
+            <p className="max-w-[335px] md:max-w-[400px] lg:max-w-none mt-[16px] text-primary-100">
               Experience the power of smart note-taking and transform the way
               you work today.
             </p>
